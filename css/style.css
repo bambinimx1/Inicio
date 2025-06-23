@@ -681,4 +681,52 @@ h6,
 }
 /*** Footer End ***/
 
+/** Galeria **/
+
+  /* El ID #galeria-playeras hace estas reglas más específicas y fuertes */
+        
+            /* Contenedor para la imagen principal para poder posicionar el botón encima */
+            #galeria-playeras .main-image-container {
+                position: relative;
+                overflow: hidden;
+            }
+        
+            /* Estilos para el botón de compra flotante sobre la imagen */
+            #galeria-playeras .btn-buy-whatsapp {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                z-index: 10;
+                font-weight: 600;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease;
+            }
+        
+            #galeria-playeras .btn-buy-whatsapp:hover {
+                transform: scale(1.05);
+            }
+        
+            /* Ajuste para que el botón se vea bien en celulares */
+            @media (max-width: 576px) {
+                #galeria-playeras .btn-buy-whatsapp {
+                    bottom: 10px;
+                    right: 10px;
+                    padding: 0.5rem 0.75rem;
+                    font-size: 0.9rem;
+                }
+            }
+/**Galeria End**/
+
+/**Carrousel**/
+.playera-carousel .item img {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.playera-carousel .item img:hover {
+  transform: scale(1.05);
+}
+
+/**Carrousel End**/
 

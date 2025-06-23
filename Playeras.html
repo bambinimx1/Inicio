@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Bambini/ Playeras</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        
+
+    </head>
+
+    <body>
+
+       
+       <!-- Botón flotante de WhatsApp con efecto pulso -->
+        <a href="https://wa.me/525545699196" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+        </a>
+
+        <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1); /* Mantiene el ícono visible sobre el fondo verde */
+        }
+
+        @keyframes pulse {
+            0% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+            }
+            70% {
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+            width: 50px;
+            height: 50px;
+            }
+
+            .whatsapp-float img {
+            width: 24px;
+            height: 24px;
+            }
+        }
+        </style>
+
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
+            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="https://maps.app.goo.gl/Nk3c44CdcCqB7c578" class="text-white">Ernesto Cortazar Mz86 Lt602, San Jose Tlahuac</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">bambini.mx1@gmail.com</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="https://www.facebook.com/profile.php?id=61556323282798" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                        <!--<a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>-->
+                        <a href="https://www.instagram.com/bambini.mx1/" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
+                        <!--<a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-linkedin-in text-secondary"></i></a>-->
+                         <a href="https://www.tiktok.com/@bambini.mx1" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-tiktok text-secondary"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <div id="Inicio"class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-3">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Bambini<span class="text-secondary"></span></h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="#about" class="nav-item nav-link">Acerca de Bambini</a>
+                            <a href="#terapias" class="nav-item nav-link">Terapias</a>
+                            <!--<a href="#" class="nav-item nav-link">Talleres</a>-->
+                            <!--<a href="event.html" class="nav-item nav-link">Eventos</a>-->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tienda en Linea</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="#" class="dropdown-item">Playeras Personalizadas</a>
+                                    <a href="#" class="dropdown-item">Macetas Decoradas</a>
+                                    <a href="#" class="dropdown-item">Material Didactico</a>
+                                    <a href="#" class="dropdown-item">Mundo Montessori</a>
+                                </div>
+                            </div>
+                            <!--<a href="#" class="nav-item nav-link">Contacto</a>-->
+                        </div>
+                        <div class="d-flex me-4">
+                            <div id="phone-tada" class="d-flex align-items-center justify-content-center">
+                                <a href="" class="position-relative wow tada" data-wow-delay=".9s" >
+                                    <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
+                                    <div class="position-absolute" style="top: -7px; left: 20px;">
+                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column pe-3 border-end border-primary">
+                                <span class="text-primary">Quiero una clase muestra</span>
+                                <a href="https://wa.me/525545699196"><span class="text-secondary">WhatsApp: 5545699196</span></a>
+                            </div>
+                        </div>
+                        <!--<button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        
+        <!--Galeria-->
+       <div id="galeria-playeras" class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <h1 class="display-4">Playeras Personalizadas</h1>
+            <p class="fs-5">Descubre nuestra nueva línea de Playeras Pintadas a Mano, donde cada diseño es único y creado con dedicación. Combinamos arte, color y creatividad para darle vida a tus ideas sobre tela. Perfectas para regalar o expresar tu estilo, ¡hechas con amor y 100% a mano!</p>
+        </div>
+
+        <div class="ecommerce-gallery">
+            <div class="row py-3 shadow-5">
+                <div class="col-12 mb-3 text-center">
+                    <img id="mainImage"
+                        src="img/Playera Principal.jpeg"
+                        alt="Playera Principal"
+                        class="img-fluid rounded shadow"
+                        style="max-height: 400px;" />
+                    <br><br>
+                    <a id="buyButton"
+                    href="https://wa.me/525545699196?text=Hola,%20me%20interesa%20esta%20playera."
+                    class="btn btn-success"
+                    target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp me-2"></i> Comprar
+                    </a>
+                </div>
+
+            <!-- Carrusel de Miniaturas -->
+<div class="container py-4">
+  <div class="owl-carousel owl-theme playera-carousel">
+
+    <!-- Repite este bloque para cada imagen -->
+    <div class="item text-center">
+      <img src="img/Playera-1.jpeg" class="img-fluid rounded shadow-sm"
+           alt="Diseño 1" />
+    
+      
+    </div>
+
+    <div class="item text-center">
+      <img src="img/Playera-2.jpeg" class="img-fluid rounded shadow-sm"
+           alt="Diseño 2" />
+     
+    </div>
+
+    <div class="item text-center">
+      <img src="img/Playera-3.jpeg" class="img-fluid rounded shadow-sm"
+           alt="Diseño 3" />
+   
+    </div>
+
+    <!-- Agrega más items aquí hasta llegar a la playera 10 -->
+    
+    <!-- Playera 10 -->
+    <div class="item text-center">
+      <img src="img/Playera-10.jpeg" class="img-fluid rounded shadow-sm"
+           alt="Diseño 10" />
+   
+    </div>
+
+  </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+        <!--End Galeria-->
+
+
+        <!-- Footer Start -->
+       
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Bambini-Centro psicopedagógico</a>, Todos los derechos reservados 2025.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        Diseñado por <a class="border-bottom" href="https://www.facebook.com/profile.php?id=100063643506628">Infinitec Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#Inicio" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        <!-- Footer End -->
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script>
+    document.querySelectorAll('.thumb').forEach(img => {
+        img.addEventListener('click', () => {
+            const mainImage = document.getElementById('mainImage');
+            const buyButton = document.getElementById('buyButton');
+
+            mainImage.src = img.getAttribute('data-img');
+            buyButton.href = img.getAttribute('data-link');
+        });
+    });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mainImg = document.querySelector('.ecommerce-gallery-main-img');
+    const thumbs = document.querySelectorAll('#galeria-playeras .col-3 img');
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const newSrc = thumb.getAttribute('data-mdb-img');
+        mainImg.src = newSrc;
+        mainImg.alt = thumb.alt;
+      });
+    });
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $(".playera-carousel").owlCarousel({
+      loop: true,
+      margin: 15,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        576: {
+          items: 2
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 4
+        },
+        1200: {
+          items: 5
+        }
+      }
+    });
+  });
+</script>
+
+
+
+    </body>
+</html>
+    </body>
+
+</html>
